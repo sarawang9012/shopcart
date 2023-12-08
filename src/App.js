@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-import { Header, Footer } from "./components";
 import { AllRoutes } from './routes/AllRoutes';
 import P1001 from "./assets/images/1001.png";
 import P1002 from "./assets/images/1002.png";
@@ -8,6 +7,7 @@ import P1003 from "./assets/images/1003.png";
 import P1004 from "./assets/images/1004.png";
 import P1005 from "./assets/images/1005.png";
 import P1006 from "./assets/images/1006.png";
+import { Header, Footer } from "./components";
 function App() {
     const [products, setProducts] = useState([
         { id: 1, name: "Sony Wh-Ch510 Bluetooth Wireless", price: 149, img: P1001 },
