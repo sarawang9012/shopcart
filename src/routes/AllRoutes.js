@@ -5,7 +5,7 @@ export const AllRoutes = ({products,setProducts,items,setItems}) => {
     <div>
         <Routes>
             <Route path="/" element={<ProductList title="Home" products={products} items={items} setItems={setItems}/>} />
-            <Route path="cart" element={<Cart title="cart" items={items} setItems={setItems}/>} />
+            <Route path="cart" element={<Cart title="Cart" items={items} setItems={setItems}/>} />
             <Route path="*" element={<PageNotFound title="Page not found"/>} />
         </Routes>
     </div>

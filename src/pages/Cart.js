@@ -1,5 +1,7 @@
 import { CartItem } from "../components";
-export const Cart = ({items,setItems}) => {
+import { useTitle } from "../hooks/useTitle";
+export const Cart = ({title, items,setItems}) => {
+    useTitle(title);
   return (
     <main>
         <section className="max-w-7xl m-auto mt-8 flex flex-col items-center ">

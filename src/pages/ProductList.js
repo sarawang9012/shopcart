@@ -1,5 +1,8 @@
 import { Card } from "../components";
-export const ProductList = ({products, items, setItems}) => {
+import { useTitle } from "../hooks/useTitle";
+
+export const ProductList = ({title, products, items, setItems}) => {
+    useTitle(title);
   return (
     <main>
         <section className="flex  flex-wrap justify-between max-w-7xl mx-auto py-5 mt-8">

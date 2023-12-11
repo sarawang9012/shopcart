@@ -1,5 +1,10 @@
-export const PageNotFound = () => {
+import {useTitle} from "../hooks/useTitle";
+export const PageNotFound = ({title}) => {
+    useTitle(title);
   return (
-    <div>PageNotFound</div>
+    <main>
+        <section className="flex justify-center ">PageNotFound
+            </section>
+        </main>
   )
 }
