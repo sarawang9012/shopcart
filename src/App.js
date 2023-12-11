@@ -18,11 +18,10 @@ function App() {
         { id: 6, name: "ZEBRONICS Zeb-Thunder Wired", price: 29, img: P1006 },
     ]);
 
-    const [items, setItems] = useState([]);
     return (
         <div className="App">
-            <Header items={items}/>
-            <AllRoutes items={items} setItems={setItems} products={products} setProducts={setProducts}/>
+            <Header />
+            <AllRoutes products={products} setProducts={setProducts}/>
             <Footer />
         </div>
     );
